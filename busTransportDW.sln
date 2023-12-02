@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "busTransportDW", "busTransportDW\busTransportDW.dwproj", "{963FF85F-C189-424F-9BA8-3A66BE91E7DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{963FF85F-C189-424F-9BA8-3A66BE91E7DA}.Development|Default.ActiveCfg = Development
+		{963FF85F-C189-424F-9BA8-3A66BE91E7DA}.Development|Default.Build.0 = Development
+		{963FF85F-C189-424F-9BA8-3A66BE91E7DA}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {834DDFC5-980A-45A8-9F72-4F2B85026A44}
+	EndGlobalSection
+EndGlobal

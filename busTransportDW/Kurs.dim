@@ -1,0 +1,244 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b0b6b24f-744e-4681-906d-5117f00fc962" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Kurs</ID>
+  <Name>Kurs</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="b89a7527-2736-4c0f-893c-01730c736a99">
+    <DataSourceViewID>Bus Transport DW</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="d42f3ac0-e04f-42f0-afac-086c479a94f3">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="dce4a97c-4359-4114-8f78-ee9c4d1acfa3">
+      <ID>Id</ID>
+      <Name>Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="502cb860-08e1-42a7-a9c9-e20878e0ceb0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73c619d9-971c-4003-b35c-9bae73e3c5b5">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bb9f833d-b94c-4c03-8aa5-08ac86915037">
+          <AttributeID>Czas Zakonczenia Kursu</AttributeID>
+          <Name>Czas Zakonczenia Kursu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7ef1f9ec-c0c9-439a-886f-59b97a20b2da">
+          <AttributeID>Data Zakonczenia Kursu</AttributeID>
+          <Name>Data Zakonczenia Kursu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2709b67a-002e-4053-b91e-f529c85d7453">
+          <AttributeID>Kierowca</AttributeID>
+          <Name>Kierowca</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9e8f0985-c365-42ac-be5a-f021a6170e54">
+          <AttributeID>Punkt Koncowy</AttributeID>
+          <Name>Punkt Koncowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="8f8fec41-bc8e-4262-bf3d-7dd2cfd3665e">
+          <AttributeID>Data Rozpoczecia Kursu</AttributeID>
+          <Name>Data Rozpoczecia Kursu</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2cc9948e-7836-4f55-aab8-b8f3b1bbb29e">
+          <AttributeID>Autobus</AttributeID>
+          <Name>Autobus</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="fd9dbfd0-0460-4d0c-ae06-04cc1882ce92">
+          <AttributeID>Punkt Poczatkowy</AttributeID>
+          <Name>Punkt Poczatkowy</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5be002a8-f9a5-4836-8764-4b4fe41143f1">
+          <AttributeID>Czas Rozpoczecia Kursu</AttributeID>
+          <Name>Czas Rozpoczecia Kursu</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e7ca8576-8f31-477d-81e0-09497ecef753">
+      <ID>Czas Zakonczenia Kursu</ID>
+      <Name>Czas Zakonczenia Kursu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="03432f86-fa9b-4543-81c7-36469a1193a9">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a44772e3-6dbe-4889-90c6-7cbb8714dd57">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Czas_zakonczenia_kursu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="35bbfc39-d39d-4754-9cd5-f8705c60bdee">
+      <ID>Data Zakonczenia Kursu</ID>
+      <Name>Data Zakonczenia Kursu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="29572186-d35f-4f65-8b3e-e869f3364812">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cc1776a0-9f8c-47be-95b7-e42337d1d1a2">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Data_zakonczenia_kursu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="a8ad50bb-fca3-46ca-8305-52cf278c3e0f">
+      <ID>Kierowca</ID>
+      <Name>Kierowca</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="af4e72d3-c091-42cf-b8a1-98e4d71e0212">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8633d8d9-2814-49eb-9ed2-894f34bb8d8f">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Kierowca</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="01218dd5-5f23-41e6-962d-cba1f7bfda73">
+      <ID>Punkt Koncowy</ID>
+      <Name>Punkt Koncowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="753a527f-ca8a-46e1-844f-b531a0c641c6">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3f0d48c7-bf79-4095-a2c2-b8ee8651a4f0">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Punkt_koncowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f014ef55-b4a6-4b47-b054-5c833a3eb42c">
+      <ID>Data Rozpoczecia Kursu</ID>
+      <Name>Data Rozpoczecia Kursu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="539371f7-a5bb-4a17-ae72-16802449e31d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5f17d14-ef4d-4f7a-b5e2-35b640d61970">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Data_rozpoczecia_kursu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0fda08e5-81d1-4762-bdf5-a74520571d24">
+      <ID>Autobus</ID>
+      <Name>Autobus</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="98154442-065e-45e1-84d5-6c6911c1b342">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b45ebb13-b258-496e-a0d7-9ea1778606b7">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Autobus</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="c0af4c2a-b9e7-4f35-b932-bb3eb522b665">
+      <ID>Punkt Poczatkowy</ID>
+      <Name>Punkt Poczatkowy</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3477370e-19b6-4e15-af40-ada2c6ae83e7">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b188294-cc5a-4251-98a2-764eb6c8adcd">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Punkt_poczatkowy</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b8e40bb-9ebe-4d18-b69f-d2a6219d74d9">
+      <ID>Czas Rozpoczecia Kursu</ID>
+      <Name>Czas Rozpoczecia Kursu</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d7a77ba4-f304-4f40-ac98-9eb45d9bbb57">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c116c9b-8190-40a0-b087-3cb548c49b26">
+            <TableID>dbo_Kurs</TableID>
+            <ColumnID>Czas_rozpoczecia_kursu</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
